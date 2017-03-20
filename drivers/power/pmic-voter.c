@@ -16,7 +16,7 @@
 #include <linux/printk.h>
 #include <linux/device.h>
 
-#include "pmic-voter.h"
+#include <linux/pmic-voter.h>
 
 #define NUM_MAX_CLIENTS	8
 
