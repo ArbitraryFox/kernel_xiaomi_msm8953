@@ -4578,3 +4578,6 @@ CONFIG_CPU_QUIET_MSM=y
 
 # Enable Qnovo
 CONFIG_QNS_SYSTEM=y
+
+# Electron governor
+CONFIG_CPU_FREQ_GOV_ELECTRON=y
