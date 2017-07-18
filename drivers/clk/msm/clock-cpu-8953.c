@@ -18,6 +18,7 @@
 #include <linux/io.h>
 #include <linux/err.h>
 #include <linux/clk.h>
+#include <linux/clk/msm-clk-provider.h>
 #include <linux/cpu.h>
 #include <linux/mutex.h>
 #include <linux/delay.h>
