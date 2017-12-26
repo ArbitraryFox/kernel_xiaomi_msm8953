@@ -4581,3 +4581,6 @@ CONFIG_QNS_SYSTEM=y
 
 # Electron governor
 CONFIG_CPU_FREQ_GOV_ELECTRON=y
+
+# Frandom
+CONFIG_FRANDOM=y
