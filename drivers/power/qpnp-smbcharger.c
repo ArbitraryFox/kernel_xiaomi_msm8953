@@ -6217,7 +6217,7 @@ static irqreturn_t batt_warm_handler(int irq, void *_chip)
 	if (rc < 0)
 		dev_err(chip->dev, "Couldn't set float voltage comp rc = %d\n", rc);
 	pr_smb(PR_STATUS, "set float voltage comp to %d\n", chip->float_voltage_comp);
-	}
+}
 
 	smbchg_read(chip, &reg, chip->bat_if_base + RT_STS, 1);
 	chip->batt_warm = !!(reg & HOT_BAT_SOFT_BIT);
@@ -6234,12 +6234,13 @@ static irqreturn_t batt_cool_handler(int irq, void *_chip)
 {
 	struct smbchg_chip *chip = _chip;
 	u8 reg = 0;
-	int rc;
 
+	int rc;
 	/* set the cool float voltage compensation ,set the cool float voltage to 4.4V*/
 	rc = smbchg_float_voltage_comp_set(chip, 0);
 	if (rc < 0)
 		dev_err(chip->dev, "Couldn't set float voltage comp rc = %d\n", rc);
+
 
 	smbchg_read(chip, &reg, chip->bat_if_base + RT_STS, 1);
 	chip->batt_cool = !!(reg & COLD_BAT_SOFT_BIT);

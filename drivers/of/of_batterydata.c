@@ -325,6 +325,7 @@ struct device_node *of_batterydata_get_best_profile(
 		batt_id_kohm = 0, i = 0, rc = 0, limit = 0;
 	bool in_range = false;
 	int checknum = 0, match = 0;
+
 	psy = power_supply_get_by_name(psy_name);
 	if (!psy) {
 		pr_err("%s supply not found. defer\n", psy_name);
@@ -392,6 +393,7 @@ struct device_node *of_batterydata_get_best_profile(
 			}
 		}
 	}
+
 	checknum = abs(best_id_kohm - batt_id_kohm);
 	if (match == 0) {
 		best_node = default_node;
