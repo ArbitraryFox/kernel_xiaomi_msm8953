@@ -841,7 +841,7 @@ static int32_t msm_actuator_park_lens(struct msm_actuator_ctrl_t *a_ctrl)
 				next_lens_pos -= PARK_LENS_QUIET_STEP;
 			else
 				next_lens_pos = 0;
- 		}
+  		}
 
 		a_ctrl->func_tbl->actuator_parse_i2c_params(a_ctrl,
 			next_lens_pos, a_ctrl->park_lens.hw_params,
