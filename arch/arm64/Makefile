@@ -17,6 +17,8 @@ GZFLAGS		:=-9
 
 KBUILD_DEFCONFIG := defconfig
 
+KBUILD_CFLAGS	+= $(call cc-option,-march=armv8-a+crypto+crc,) $(call cc-option,-mcpu=cortex-a53+crypto+crc,)
+
 KBUILD_CFLAGS	+= -mgeneral-regs-only
 KBUILD_CFLAGS	+= -fno-pic
 KBUILD_CFLAGS	+= -fno-asynchronous-unwind-tables
