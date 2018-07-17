@@ -1498,8 +1498,6 @@ static int ft5435_ts_resume(struct device *dev)
 {
 	struct ft5435_ts_data *data = g_ft5435_ts_data;
 
-
-
 	if (!data->suspended) {
 		dev_dbg(dev, "Already in awake state\n");
 		return 0;
