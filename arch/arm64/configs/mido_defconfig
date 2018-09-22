@@ -4587,9 +4587,6 @@ CONFIG_CPU_QUIET_MSM=y
 # Qnovo
 CONFIG_QNS_SYSTEM=y
 
-# Electron governor
-# CONFIG_CPU_FREQ_GOV_ELECTRON is not set
-
 # Frandom
 CONFIG_FRANDOM=y
 
