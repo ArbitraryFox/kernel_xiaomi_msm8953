@@ -827,8 +827,6 @@ static int mdss_dsi_panel_off(struct mdss_panel_data *pdata)
 
 	display_on = false;
 
-	display_on = false;
-
 end:
 	pr_debug("%s:-\n", __func__);
 	return 0;
